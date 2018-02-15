@@ -42,8 +42,12 @@ jQuery(document).ready(function ($) {
 			breakpoint: 680,
 			settings: {
 				autoplay: true,
+				autoplaySpeed: 8000,
+				fade: false,
 				arrows: false,
-				dots: true
+				dots: false,
+				pauseOnFocus: true,
+				pauseOnHover: true
 			}},
 			]
 		});

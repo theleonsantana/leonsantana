@@ -293,18 +293,14 @@ nav ul li a, nav ul li a:hover, nav ul li a:visited, nav ul li a:link {
 } */
 
 /* my works slider and slick slider styles */
-.slick-list.draggable {
-	padding: 0.5em;
-}
+
 .slick-prev,
 .slick-next
 {
     font-size: 0;
 		line-height: 0;
-		
     position: absolute;
-		top: 50%;
-
+		top: 59%;
     display: block;
 
     width: 30px;
@@ -358,18 +354,20 @@ nav ul li a, nav ul li a:hover, nav ul li a:visited, nav ul li a:link {
 
 .slick-prev
 {
-    left: -30px;
+    left: -40px;
 }
 [dir='rtl'] .slick-prev
 {
-    right: -30px;
+    right: -40px;
     left: auto;
 }
 .slick-prev:before
 {
 		font-family: FontAwesome;
 		font-size: 30px;
-    content: "\f0a8";
+		content: "\f0a8";
+		cursor: pointer;
+		color: rgb(200, 200, 200);
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -379,18 +377,20 @@ nav ul li a, nav ul li a:hover, nav ul li a:visited, nav ul li a:link {
 
 .slick-next
 {
-    right: -30px;
+    right: -40px;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -30px;
+    left: -40px;
 }
 .slick-next:before
 {
 		font-family: FontAwesome;
 		font-size: 30px;
-    content: "\f0a9";
+		content: "\f0a9";
+		cursor: pointer;
+		color: rgb(200, 200, 200);
 }
 [dir='rtl'] .slick-next:before
 {
@@ -472,7 +472,7 @@ nav ul li a, nav ul li a:hover, nav ul li a:visited, nav ul li a:link {
     text-align: center;
 
     opacity: .25;
-    color: black;
+    color: rgb(200, 200, 200);
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -480,7 +480,7 @@ nav ul li a, nav ul li a:hover, nav ul li a:visited, nav ul li a:link {
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
-    color: black;
+    color: rgb(200, 200, 200);
 }
 
 /* Media Queries */
@@ -512,6 +512,7 @@ nav ul li a, nav ul li a:hover, nav ul li a:visited, nav ul li a:link {
 	.site-footer {
 		font-size: 0.8em;
 	}
+
 	
 	/* Styles */
 	}
@@ -530,6 +531,11 @@ nav ul li a, nav ul li a:hover, nav ul li a:visited, nav ul li a:link {
 	.my-works-item {
 		width: 600px;
 		top: 50px;
+	}
+	.slick-prev,
+	.slick-next
+	{
+	top: 50%;
 	}
 	.slick-dots {
 		top: 185px;
