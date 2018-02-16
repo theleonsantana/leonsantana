@@ -39,7 +39,7 @@ jQuery(document).ready(function ($) {
 		fade: true,
 		responsive: [
 			{
-			breakpoint: 680,
+			breakpoint: 681,
 			settings: {
 				autoplay: true,
 				autoplaySpeed: 8000,
