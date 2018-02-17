@@ -492,6 +492,7 @@ nav ul li a, nav ul li a:hover, nav ul li a:visited, nav ul li a:link {
 @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
 	.about-section p {
 		width: 90%;
+		font-size: 0.9em;
 	}
 	.site-description {
     margin: 5em 2em 7em;
@@ -511,10 +512,13 @@ nav ul li a, nav ul li a:hover, nav ul li a:visited, nav ul li a:link {
 	}
 	.letstalk-section p {
 		width: 90%;
-		font-size: 0.9em
+		font-size: 0.9em;
 	}
 	.site-footer {
 		font-size: 0.8em;
+	}
+	.site-description {
+		font-size: 0.9em;
 	}
 
 	
