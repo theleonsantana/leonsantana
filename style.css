@@ -55,13 +55,16 @@ Version: 0.1.0
 
 /* Social Media */
 #socia-media {
-  text-align: center;
-  color: rgb(255, 255, 255);
+	text-align: center;
+	font-family: FontAwesome;
   font-size: 2em;
   margin-bottom: 2em;
 }
+#socia-media a svg {
+	color: rgb(255, 255, 255);
+}
 
-#socia-media svg:nth-child(2) {
+#socia-media a:nth-child(2) {
   margin: 0 0.3em 0;
 }
 
@@ -225,10 +228,12 @@ nav ul li a, nav ul li a:hover, nav ul li a:visited, nav ul li a:link {
 	font-size: 2em;
 }
 .works-icons a {
+	cursor: pointer;
 	color: rgb(200, 200, 200);
 }
 .works-icons a:hover {
 	color: rgb(130, 130, 130);
+	cursor: pointer;
 }
 
 /* Let's Talk section styles */
@@ -310,7 +315,6 @@ nav ul li a, nav ul li a:hover, nav ul li a:visited, nav ul li a:link {
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
 
-    cursor: pointer;
 
     color: transparent;
     border: none;

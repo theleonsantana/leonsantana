@@ -47,9 +47,9 @@
     </div><!-- .site-branding -->
 
     <div id="socia-media">
-      <a class="fab fa-linkedin" target="_blank" href="https://www.linkedin.com/in/theleonsantana/"></a>
-      <a class="fab fa-github" target="_blank" href="https://github.com/theleonsantana"></a>
-      <a class="fab fa-twitter-square" target="_blank" href="https://twitter.com/theleonsantana"></a>
+      <a href="https://www.linkedin.com/in/theleonsantana/" target="_blank" ><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/theleonsantana" target="_blank" ><i class="fab fa-github"></i></a>
+      <a href="https://twitter.com/theleonsantana" target="_blank" ><i class="fab fa-twitter-square"></i></a>
     </div><!-- social media -->
   <nav>
     <div id="nav-wrapper">
