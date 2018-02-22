@@ -16,9 +16,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
-
 <?php wp_head(); ?>
+<?php if ( is_home() ) {
+    $image = wp_get_attachment_image_url(get_theme_mod('custom_logo'), 'large');
+} ?>
+<meta property="og:image" content="<?php echo $image; ?>" />
+<meta property="og:type" content="website" />
+<meta name="twitter:image" content="<?php echo $image; ?>" />
 </head>
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site <?php echo get_theme_mod( 'layout_setting', 'no-sidebar' ); ?>">

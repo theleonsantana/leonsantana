@@ -4,10 +4,21 @@ function popper_child_setup() {
   // Prepare theme for translation
   load_child_theme_textdomain ( 'popper-child', get_stylesheet_directory() . '/languages' );
   
-	add_image_size ('works-images', 800, 250 );
-}
+  add_image_size ('works-images', 800, 250 );
 
-add_action( 'after_setup_theme', 'popper_child_setup');
+  
+}
+add_action( 'after_setup_theme', 'popper_child_setup' );
+
+function override_custom_logo() {
+  add_theme_support( 'custom-logo', array(
+       'height'      => 220,
+       'width'       => 220,
+       'flex-height' => true,
+       'flex-width'  => true
+  ) );
+}
+add_action( 'after_setup_theme', 'override_custom_logo', 11 );
 
 // Nav enqueue
 function popper_child_scripts() {
