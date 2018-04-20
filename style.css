@@ -239,17 +239,61 @@ nav ul li a:link {
   width: 800px;
   margin: 0 auto;
 }
+/* work icons styles */
 .works-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.works-icons a {
+  font-size: 1em;
+  font-family: 'Source Code Pro', monospace;
+  width: auto;
+  padding: 0.7em;
+  color: rgb(52, 52, 52);
+  background-color: rgb(150, 150, 150);
+  border-radius: 0.25em;
+  text-decoration: none;
+  text-align: center;
+  margin-right: 0.5em;
+}
+
+.works-icons a:hover,
+.works-icons a:focus {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.works-icons .svg-inline--fa {
+  margin-right: 1em;
+}
+
+.behance::before {
+  font-family: 'FontAwesome';
+  content: '\f1b4';
+  margin-right: 0.5em;
+}
+
+.github::before {
+  font-family: 'FontAwesome';
+  content: '\f09b';
+  margin-right: 0.5em;
+}
+
+/* .works-icons {
   font-size: 2em;
 }
 .works-icons a {
   cursor: pointer;
   color: rgb(200, 200, 200);
 }
+
 .works-icons a:hover {
   color: rgb(130, 130, 130);
   cursor: pointer;
-}
+} */
 
 /* Let's Talk section styles */
 
