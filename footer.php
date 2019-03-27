@@ -20,7 +20,7 @@
       <a href="https://twitter.com/theleonsantana" target="_blank" ><i class="fab fa-twitter-square"></i></a>
     </div><!-- social media -->
 		<div class="site-info">
-			<p>Copyright &copy; Leonardo Santana 2018</p>
+			<p>Copyright &copy; Leonardo Santana <?php echo date("Y"); ?></p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

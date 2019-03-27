@@ -42,6 +42,7 @@ Version: 0.1.0
 
 .site-title a {
   text-decoration: none;
+  outline: none;
   color: inherit;
   pointer-events: none;
   cursor: default;
@@ -259,12 +260,14 @@ nav ul li a:link {
   text-decoration: none;
   text-align: center;
   margin-right: 0.5em;
+  outline: none;
 }
 
 .works-icons a:hover,
 .works-icons a:focus {
   color: rgba(255, 255, 255, 1);
   text-decoration: none;
+  outline: none;
 }
 
 .works-icons .svg-inline--fa {
@@ -322,6 +325,7 @@ nav ul li a:link {
   color: rgb(94, 94, 94);
   font-weight: 700;
   text-decoration: none;
+  outline: none;
 }
 .letstalk-section a:hover {
   color: rgb(120, 120, 120);
