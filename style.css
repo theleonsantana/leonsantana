@@ -1,0 +1,598 @@
+/* 
+Theme Name: Popper Child Theme
+Description: Child theme from the awesome Popper theme.
+Author: Leonardo Santana
+Author URI: https://leonsantana.com/
+Template: popper
+Version: 0.1.0
+*/
+
+@import url('../popper/style.css');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700');
+@import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
+
+.site-content {
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+/* Header */
+.site-header {
+  background-color: rgb(0, 0, 0);
+}
+.site-title {
+  margin: 0 auto;
+  padding: 2em 1em 0;
+  font-family: 'Circular Std', sans-serif;
+  font-size: 2.9em;
+  font-weight: bold;
+  line-height: 1.3em;
+  color: #fff;
+  text-transform: none;
+}
+
+.site-title::after {
+  display: block;
+  content: '';
+  margin: 0.7em auto 0;
+  width: 3em;
+  border-bottom: none;
+  opacity: 0.5;
+}
+
+.site-title a {
+  text-decoration: none;
+  color: inherit;
+  pointer-events: none;
+  cursor: default;
+}
+
+.site-description {
+  margin: 2em 2em 2em;
+  font-size: 1em;
+  color: #ededed;
+  font-family: 'Source Code Pro', monospace;
+}
+
+/* Social Media */
+#socia-media {
+  text-align: center;
+  font-family: FontAwesome;
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+#socia-media a svg {
+  color: rgb(255, 255, 255);
+}
+
+#socia-media a:nth-child(2) {
+  margin: 0 0.3em 0;
+}
+
+#socia-media svg:hover {
+  color: rgb(185, 185, 185);
+  cursor: pointer;
+}
+
+/* nav styles */
+nav {
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: -200px;
+  background: rgb(0, 0, 0);
+  transition: all 0.25s ease;
+}
+nav.open {
+  right: 0;
+  transition: all 0.25s ease;
+}
+#nav-wrapper {
+  position: relative;
+}
+
+#open-menu,
+#close-menu {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -2.06em;
+  color: rgb(255, 255, 255);
+  padding: 0.3em 0.6em;
+  outline: 0;
+  font-size: 2em;
+  background-color: rgb(0, 0, 0);
+}
+#close-menu {
+  display: none;
+}
+
+#open-menu:hover,
+#close-menu:hover {
+  color: rgb(185, 185, 185);
+}
+
+nav ul {
+  padding: 15px 0 0 15px;
+}
+nav ul li {
+  margin-bottom: 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li a,
+nav ul li a:hover,
+nav ul li a:visited,
+nav ul li a:link {
+  font-size: 110%;
+  color: rgb(255, 255, 255);
+  font-family: 'Source Code Pro', monospace;
+  text-decoration: none;
+}
+.clip {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+/* styles for the main content */
+.site-content h2 {
+  margin: 0 0 2.5em;
+  padding-top: 3.5em;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* About Me section styles */
+.about-section {
+  background-color: rgb(240, 240, 240);
+  width: 100%;
+}
+.about-section img {
+  display: block;
+  margin: 0 auto;
+}
+
+.about-section p {
+  width: 38%;
+  margin: 0 auto;
+  padding: 3.5em 0 6.5em;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+  font-size: 1em;
+  text-align: justify;
+  /* letter-spacing: -0.2px; */
+}
+
+/* my process section styles*/
+.process-section {
+  background-color: rgb(230, 230, 230);
+  width: 100%;
+}
+
+.process-icons {
+  width: 900px;
+  padding: 2px; /*eventually*/
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.single-process-icons {
+  width: 380px;
+  margin: 0 auto;
+}
+
+.process-icons h3 {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.process-icons p {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+  font-size: 1em;
+  text-align: center;
+  line-height: 1.5;
+  padding: 0 0 4.5em;
+  margin: 1em 0 0;
+}
+
+.image-process-content {
+  width: 35%;
+  height: auto;
+}
+
+/* my works section styles*/
+.works-section {
+  background-color: rgb(52, 52, 52);
+  padding-bottom: 7em;
+}
+.works-section h2 {
+  color: rgb(200, 200, 200);
+}
+.works-section h3 {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 700;
+  font-size: 1em;
+  color: rgb(200, 200, 200);
+  margin-top: 40px;
+}
+.works-section p {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.5;
+  color: rgb(200, 200, 200);
+}
+
+.my-works-item {
+  width: 800px;
+  margin: 0 auto;
+}
+/* work icons styles */
+.works-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.works-icons a {
+  font-size: 1em;
+  font-family: 'Source Code Pro', monospace;
+  width: auto;
+  padding: 0.7em;
+  color: rgb(52, 52, 52);
+  background-color: rgb(150, 150, 150);
+  border-radius: 0.25em;
+  text-decoration: none;
+  text-align: center;
+  margin-right: 0.5em;
+}
+
+.works-icons a:hover,
+.works-icons a:focus {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.works-icons .svg-inline--fa {
+  margin-right: 1em;
+}
+
+.behance:before {
+  font-family: 'Font Awesome 5 Brands' !important;
+  content: '\f1b4';
+  margin-right: 0.5em;
+}
+
+.github:before {
+  font-family: 'Font Awesome 5 Brands' !important;
+  content: '\f09b';
+  margin-right: 0.5em;
+}
+
+.website:before {
+  font-family: 'Font Awesome 5 Brands' !important;
+  content: '';
+  margin-right: 0.5em;
+}
+
+/* .works-icons {
+  font-size: 2em;
+}
+.works-icons a {
+  cursor: pointer;
+  color: rgb(200, 200, 200);
+}
+
+.works-icons a:hover {
+  color: rgb(130, 130, 130);
+  cursor: pointer;
+} */
+
+/* Let's Talk section styles */
+
+.letstalk-section {
+  background-color: rgb(230, 230, 230);
+  padding-bottom: 6em;
+}
+
+.letstalk-section p {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.5;
+  width: 35%;
+  margin: 0 auto;
+  padding: 0 0 1em;
+}
+.letstalk-section a {
+  color: rgb(94, 94, 94);
+  font-weight: 700;
+  text-decoration: none;
+}
+.letstalk-section a:hover {
+  color: rgb(120, 120, 120);
+  border-bottom: 4px solid rgb(120, 120, 120);
+}
+
+.site-footer {
+  padding: 4em 1em;
+  font-family: 'Source Code Pro', monospace;
+  text-align: center;
+  color: rgb(110, 110, 110);
+  background-color: rgb(150, 150, 150);
+}
+/* Contact form styles */
+/* .ccf-form-wrapper .form-title {
+	font-size: 0;
+	padding: 0 0;
+	display: none;
+}
+.ccf-form .ccf-theme-default {
+	width: 40%;
+  margin: 0 auto;
+}
+
+#respond button, input[type="submit"] {
+	width: 90%;
+	display: inherit;
+	margin: 0 auto;
+	border: 3px solid;
+	border-color: #fff;
+	border-radius: 0;
+	background: #000;
+	color: #fff;
+	font-family: Source Code pro, monospace;
+	font-size: 12px;
+	font-size: 0.7em;
+	line-height: 1;
+	padding: .6em 1em .4em;
+} */
+
+/* my works slider and slick slider styles */
+
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 59%;
+  display: block;
+
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  color: transparent;
+  outline: none;
+  background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 20px;
+  line-height: 1;
+
+  opacity: 0.75;
+  color: rgb(0, 0, 0);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev {
+  left: -40px;
+}
+[dir='rtl'] .slick-prev {
+  right: -40px;
+  left: auto;
+}
+.slick-prev:before {
+  font-size: 30px;
+  content: '\21E0';
+  cursor: pointer;
+  color: rgb(200, 200, 200);
+}
+[dir='rtl'] .slick-prev:before {
+  content: '\21E0';
+}
+
+.slick-next {
+  right: -40px;
+}
+[dir='rtl'] .slick-next {
+  right: auto;
+  left: -40px;
+}
+.slick-next:before {
+  font-size: 30px;
+  content: '\21E2';
+  cursor: pointer;
+  color: rgb(200, 200, 200);
+}
+[dir='rtl'] .slick-next:before {
+  content: '\21E2';
+}
+
+/* Slick Dots */
+
+.slick-dots {
+  position: absolute;
+  top: 250px;
+
+  display: block;
+
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+
+  text-align: center;
+}
+.slick-dots li {
+  position: relative;
+
+  display: inline-block;
+
+  width: 20px;
+  height: 20px;
+  margin: 0 0;
+  padding: 0;
+
+  cursor: pointer;
+}
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+
+  display: block;
+
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+
+  cursor: pointer;
+
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  opacity: 1;
+}
+.slick-dots li button:before {
+  font-size: 20px;
+  line-height: 20px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+
+  content: '•';
+  text-align: center;
+
+  opacity: 0.25;
+  color: rgb(200, 200, 200);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: rgb(200, 200, 200);
+}
+
+/* Media Queries */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 680px) {
+  .about-section p {
+    width: 90%;
+    font-size: 0.9em;
+  }
+  .site-description {
+    margin: 5em 2em 7em;
+    font-size: 1.2em;
+  }
+  .single-process-icons {
+    width: 250px;
+  }
+  .process-icons {
+    width: 300px;
+  }
+  .process-icons p {
+    font-size: 0.9em;
+  }
+  .my-works-item {
+    width: 90%;
+  }
+  .letstalk-section p {
+    width: 90%;
+    font-size: 0.9em;
+  }
+  .site-footer {
+    font-size: 0.8em;
+  }
+  .site-description {
+    font-size: 0.9em;
+  }
+
+  /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .about-section p {
+    width: 55%;
+  }
+  .single-process-icons {
+    width: 250px;
+  }
+  .process-icons {
+    width: 700px;
+  }
+  .my-works-item {
+    width: 600px;
+    top: 50px;
+  }
+  .slick-prev,
+  .slick-next {
+    top: 50%;
+  }
+  .slick-dots {
+    top: 185px;
+  }
+  .letstalk-section p {
+    width: 40%;
+  }
+  /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+}
