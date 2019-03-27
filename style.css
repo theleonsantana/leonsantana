@@ -286,9 +286,15 @@ nav ul li a:link {
   margin-right: 0.5em;
 }
 
-.website:before {
+.wordpress:before {
   font-family: 'Font Awesome 5 Brands' !important;
-  content: '';
+  content: '\f19a';
+  margin-right: 0.5em;
+}
+
+.js:before {
+  font-family: 'Font Awesome 5 Brands' !important;
+  content: '\f3b8';
   margin-right: 0.5em;
 }
 
@@ -428,12 +434,12 @@ nav ul li a:link {
 }
 .slick-prev:before {
   font-size: 30px;
-  content: '\21E0';
+  content: '‹';
   cursor: pointer;
   color: rgb(200, 200, 200);
 }
 [dir='rtl'] .slick-prev:before {
-  content: '\21E0';
+  content: '‹';
 }
 
 .slick-next {
@@ -445,12 +451,12 @@ nav ul li a:link {
 }
 .slick-next:before {
   font-size: 30px;
-  content: '\21E2';
+  content: '›';
   cursor: pointer;
   color: rgb(200, 200, 200);
 }
 [dir='rtl'] .slick-next:before {
-  content: '\21E2';
+  content: '›';
 }
 
 /* Slick Dots */
